@@ -1,0 +1,4 @@
+li.done .task-text {
+  text-decoration: line-through;
+  opacity: 0.4;
+}

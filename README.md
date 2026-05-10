@@ -29,4 +29,4 @@
 
 ## デモ
 
-https://utmyk.github.io/todo-app/
+https://ykutm.github.io/todo-app/

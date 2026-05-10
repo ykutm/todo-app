@@ -18,7 +18,6 @@ function saveTasks(tasks) {
 }
 
 // DOMの操作
-
 function addTaskToDOM(task) {
   const li = document.createElement("li");
   li.dataset.id = task.id; // タスクを識別するIDをli要素に持たせる
@@ -56,11 +55,11 @@ function deleteTask(id) {
   const tasks = getTasks().filter((t) => t.id !== Number(id));
   saveTasks(tasks);
 }
-// --- タスク追加 ---
 
+// --- タスク追加 ---
 function addTask(text) {
   const task = {
-    id: Date.now(),
+    id: Date.now(), // 追加したときの時刻数値でタスクを識別するIDを設定
     text: text,
     done: false,
   };
@@ -70,7 +69,7 @@ function addTask(text) {
   addTaskToDOM(task);
 }
 
-// --- イベントリスナー
+// --- イベントリスナー ---
 addBtn.addEventListener("click", () => {
   const text = taskInput.value.trim();
   if (text === "") return; // 空欄なら何もしない
@@ -79,10 +78,10 @@ addBtn.addEventListener("click", () => {
 });
 
 taskInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") addBtn.click();
+  if (e.key === "Enter" && !e.isComposing) addBtn.click();
 });
 
-// --- 初期化:ページ読み込み時にlocalStorageからタスクを復元
+// --- 初期化:ページ読み込み時にlocalStorageからタスクを復元 ---
 getTasks().forEach((task) => addTaskToDOM(task));
 
 // --- フィルター ---

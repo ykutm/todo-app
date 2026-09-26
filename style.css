@@ -23,11 +23,14 @@ li.done .task-text {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgb(245, 245, 245);
 }
 .task-list li span {
   /* display: inline-block; */
   margin-right: 1rem;
+}
+.task-list li:nth-child(odd) {
+  background-color: rgb(246, 246, 235);
 }
 button {
   padding: 0.3rem 0.8rem;

@@ -1,4 +1,21 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 li.done .task-text {
   text-decoration: line-through;
   opacity: 0.4;
+}
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+.task-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid lightgray;
+}
+.task-list li span {
+  display: inline-block;
+  margin-right: 1rem;
 }

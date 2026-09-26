@@ -35,6 +35,8 @@ li.done .task-text {
 button {
   padding: 0.3rem 0.8rem;
   min-width: 4rem;
+  border-radius: 2px;
+  cursor: pointer;
 }
 button:hover {
   opacity: 0.9;
@@ -46,4 +48,8 @@ button:hover {
 }
 .filter-btn.active {
   background-color: darkorchid;
+}
+.delete-btn {
+  border: 1px solid rgb(164, 164, 164);
+  background-color: transparent;
 }

@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -18,13 +19,17 @@ li.done .task-text {
   padding: 0;
 }
 .task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.5rem;
-  border-bottom: 1px solid linen;
+  border-bottom: 1px solid lightgray;
 }
 .task-list li span {
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 1rem;
 }
 button {
   padding: 0.3rem 0.8rem;
+  min-width: 4rem;
 }

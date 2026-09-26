@@ -33,3 +33,11 @@ button {
   padding: 0.3rem 0.8rem;
   min-width: 4rem;
 }
+.filter-btn {
+  background-color: rgb(164, 164, 164);
+  color: white;
+  border: 0;
+}
+.filter-btn.active {
+  background-color: darkorchid;
+}

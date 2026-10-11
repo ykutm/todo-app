@@ -17,6 +17,7 @@ li.done .task-text {
 }
 .task-list {
   list-style-type: none;
+  padding-left: 0;
 }
 .task-list li {
   display: flex;

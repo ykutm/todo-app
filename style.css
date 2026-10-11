@@ -9,7 +9,6 @@
 .input-area input {
   padding: 0.4rem;
   min-width: 12rem;
-  font-size: 1rem;
 }
 li.done .task-text {
   text-decoration: line-through;
@@ -54,6 +53,5 @@ button:hover {
   background-color: darkorchid;
 }
 .delete-btn {
-  border: 1px solid rgb(164, 164, 164);
-  background-color: transparent;
+  background-color: rgb(164, 164, 164);
 }
